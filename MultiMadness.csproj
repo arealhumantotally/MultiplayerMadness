@@ -49,6 +49,8 @@
         <EmbeddedResource Remove="materials/**"/>
         <EmbeddedResource Remove="shaders/**"/>
         <EmbeddedResource Remove="images/**"/>
+        <Compile Remove="MultiMadnessCode\Keywords\**" />
+        <EmbeddedResource Remove="MultiMadnessCode\Keywords\**" />
     </ItemGroup>
 
     <ItemGroup>
