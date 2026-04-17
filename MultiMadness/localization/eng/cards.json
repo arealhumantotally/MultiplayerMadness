@@ -7,8 +7,6 @@
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.title": "Distributed Computing",
   "MULTIMADNESS-COMPUTE.description": "Give another player X Energy",
   "MULTIMADNESS-COMPUTE.title": "Compute",
-  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage} to all enemies, \nDeal {AllyDamage} to all allies.",
-  "MULTIMADNESS-BLIND_FURY.title": "Blind Fury",
   "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {Energy:energyIcons()}",
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!"
 }
