@@ -12,6 +12,7 @@ using MultiMadness.MultiMadnessCode.Cards;
 
 namespace MultiMadness.MultiMadnessCode.Cards.IronClad;
 
+
 [Pool(typeof(IroncladCardPool))]
 public class BlindFury() : MultiMadnessCard(0,
     CardType.Attack, CardRarity.Uncommon,
