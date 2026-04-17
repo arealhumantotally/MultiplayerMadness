@@ -27,12 +27,14 @@ public class Prismatic : CustomEnchantmentModel
             return;
         }
         List<Player> otherPlayers = players.Where(p => p != play.Card.Owner).ToList();
-        otherPlayers.UnstableShuffle(play.Card.Owner.RunState.Rng.Niche);
-        Player victim = otherPlayers[0];
         this.Status = EnchantmentStatus.Disabled;
-        CardModel cardClone =  play.Card.CreateClone();
-        cardClone.Owner = null;
-        cardClone.Owner = victim;
-        await CardPileCmd.AddGeneratedCardToCombat(cardClone,PileType.Hand,true);
+        foreach (Player victim in otherPlayers)
+        {
+            CardModel cardClone =  play.Card.CreateClone();
+            cardClone.Owner = null;
+            cardClone.Owner = victim;
+            await CardPileCmd.AddGeneratedCardToCombat(cardClone,PileType.Hand,true);
+        }
+
     }
 }
