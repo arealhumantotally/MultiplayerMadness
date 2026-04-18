@@ -20,7 +20,7 @@ public class DistributedComputing() : MultiMadnessCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Compute>()];
-
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

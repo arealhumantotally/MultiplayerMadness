@@ -19,7 +19,7 @@ public class BlindFury() : MultiMadnessCard(0,
     TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 4), new DamageVar(13, ValueProp.Move)];
-
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

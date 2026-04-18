@@ -15,17 +15,27 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace MultiMadness.MultiMadnessCode.Powers;
 
 
-public class TreacheryPower : MultiMadnessPower
+
+public class LucidityPower : MultiMadnessPower
 {
     public override PowerType Type => PowerType.Buff;
 
     public override PowerStackType StackType => PowerStackType.Counter;
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 0)];
 
-    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
+        Creature? dealer, CardModel? cardSource)
     {
-        TreacheryPower treacheryPower = this;
-        if (side != this.Owner.Side)
+        if (this.CombatState.CurrentSide != this.Owner.Side)
+        {
+            return;
+        }
+
+        if (result.WasFullyBlocked)
+        {
+            return;
+        }
+
+        if (target != this.Owner)
         {
             return;
         }
@@ -35,16 +45,7 @@ public class TreacheryPower : MultiMadnessPower
             {
                 continue;
             }
-            await CreatureCmd.Damage(choiceContext, i, (Decimal) this.DynamicVars["AllyDamage"].IntValue, ValueProp.Unpowered, this.Owner);
+            await CreatureCmd.GainBlock(i, new BlockVar(this.Amount * result.UnblockedDamage,ValueProp.Move),null, false);
         }
-
-        await PowerCmd.Apply<StrengthPower>(this.Owner, (Decimal)this.Amount, this.Owner, (CardModel)null);
-
-    }
-
-    public void IncrementAllyDamage(int amount)
-    {
-        this.AssertMutable();
-        this.DynamicVars["AllyDamage"].BaseValue += amount;
     }
 }
