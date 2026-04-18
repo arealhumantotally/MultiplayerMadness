@@ -34,13 +34,18 @@ public class LucidityPower : MultiMadnessPower
         {
             return;
         }
+
+        if (target != this.Owner)
+        {
+            return;
+        }
         foreach (Creature i in this.CombatState.Allies)
         {
             if (i == this.Owner)
             {
                 continue;
             }
-            await CreatureCmd.GainBlock(i, new BlockVar(this.Amount,ValueProp.Move),null, false);
+            await CreatureCmd.GainBlock(i, new BlockVar(this.Amount * result.UnblockedDamage,ValueProp.Move),null, false);
         }
     }
 }

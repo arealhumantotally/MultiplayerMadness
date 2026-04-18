@@ -14,17 +14,17 @@ public class Lucidity() : MultiMadnessCard(1,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
-
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("Multiplier", 1)];
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<LucidityPower>(this.Owner.Creature,1, this.Owner.Creature, this);
+        await PowerCmd.Apply<LucidityPower>(this.Owner.Creature,this.DynamicVars["Multiplier"].IntValue, this.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-
+        this.DynamicVars["Multiplier"].UpgradeValueBy(1);
     }
 }

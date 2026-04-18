@@ -16,6 +16,8 @@ public class Compute() : MultiMadnessCard(0,
     protected override bool HasEnergyCostX => true;
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
+
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

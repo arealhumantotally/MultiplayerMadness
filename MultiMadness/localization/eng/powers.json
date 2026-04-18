@@ -3,6 +3,6 @@
   "MULTIMADNESS-TREACHERY_POWER.smartDescription": "At the end of your turn, gain [blue]{Amount}[/blue] [gold]strength[/gold], \nDeal [red]{AllyDamage}[/red] damage to all ALLIES.",
   "MULTIMADNESS-TREACHERY_POWER.title": "Treachery",
   "MULTIMADNESS-LUCIDITY_POWER.description": "Whenever you take damage on your turn, give all allies that much block",
-  "MULTIMADNESS-LUCIDITY_POWER.smartDescription": "Whenever you take damage on your turn, give all allies {Amount} times that much block.",
+  "MULTIMADNESS-LUCIDITY_POWER.smartDescription": "Whenever you take damage on your turn, give all allies {Amount:plural:that much|{Multiplier} times that much} block",
   "MULTIMADNESS-LUCIDITY_POWER.title": "LucidityPower"
 }

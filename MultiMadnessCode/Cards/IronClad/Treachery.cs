@@ -13,17 +13,17 @@ public class Treachery() : MultiMadnessCard(2,
     CardType.Power, CardRarity.Uncommon,
     MegaCrit.Sts2.Core.Entities.Cards.TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 4), new DynamicVar("AmountGiven", 1)];
     public override CardMultiplayerConstraint MultiplayerConstraint => (CardMultiplayerConstraint)1;
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        (await PowerCmd.Apply<TreacheryPower>(this.Owner.Creature, 1, this.Owner.Creature, this))?.IncrementAllyDamage(this.DynamicVars["AllyDamage"].IntValue);
+        (await PowerCmd.Apply<TreacheryPower>(this.Owner.Creature, this.DynamicVars["AmountGiven"].IntValue, this.Owner.Creature, this))?.IncrementAllyDamage(this.DynamicVars["AllyDamage"].IntValue);
     }
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars["AllyDamage"].UpgradeValueBy(-1);
+        this.DynamicVars["AmountGiven"].UpgradeValueBy(1);
     }
 }
