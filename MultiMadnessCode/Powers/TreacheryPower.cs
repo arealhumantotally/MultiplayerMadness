@@ -42,9 +42,9 @@ public class TreacheryPower : MultiMadnessPower
 
     }
 
-    public void IncrementAllyDamage()
+    public void IncrementAllyDamage(int amount)
     {
         this.AssertMutable();
-        this.DynamicVars["AllyDamage"].BaseValue += 6;
+        this.DynamicVars["AllyDamage"].BaseValue += amount;
     }
 }
