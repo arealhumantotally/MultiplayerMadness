@@ -36,6 +36,6 @@ public class DistributedComputing() : MultiMadnessCard(1,
 
     protected override void OnUpgrade()
     {
-        this.EnergyCost.UpgradeBy(1);
+        this.EnergyCost.UpgradeBy(-1);
     }
 }
