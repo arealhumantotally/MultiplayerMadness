@@ -23,7 +23,13 @@ public class Compute() : MultiMadnessCard(0,
         CardPlay play)
     {
         int paid = this.ResolveEnergyXValue();
+        if (this.IsUpgraded)
+        {
+            ++paid;
+        }
+        
         PlayerCmd.GainEnergy(paid, play.Target.Player);
+        
     }
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust, CardKeyword.Retain];

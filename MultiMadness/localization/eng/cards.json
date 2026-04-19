@@ -5,7 +5,7 @@
   "MULTIMADNESS-TREACHERY.title": "Treachery",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.description": "Give all allies a [gold]Compute[/gold]",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.title": "Distributed Computing",
-  "MULTIMADNESS-COMPUTE.description": "Give another player X Energy",
+  "MULTIMADNESS-COMPUTE.description": "Give another player {IfUpgraded:show:X+1|X} Energy",
   "MULTIMADNESS-COMPUTE.title": "Compute",
   "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {Energy:energyIcons()}",
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!",
