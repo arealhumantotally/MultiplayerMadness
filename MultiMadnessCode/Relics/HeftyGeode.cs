@@ -24,7 +24,7 @@ namespace MultiMadness.MultiMadnessCode.Relics;
 public class HeftyGeode() : MultiMadnessRelic
 {
     public override RelicRarity Rarity =>
-        RelicRarity.Event;
+        RelicRarity.Rare;
     public override int DisplayAmount => this.ChipsRemaining;
     private int _chipsRemaining;
     public override async Task AfterObtained()
