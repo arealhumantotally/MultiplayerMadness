@@ -26,6 +26,8 @@
   "MULTIMADNESS-TRANSFER_POWER.description": "Give another player {IfUpgraded:show:X*2|X} energy ",
   "MULTIMADNESS-TRANSFER_POWER.title": "Transfer Power"
   "MULTIMADNESS-SPIKE.description": "Give an Ally 3 poison \nGive them strength equal to their poison {IfUpgraded:show:\nDraw a card|}",
-  "MULTIMADNESS-SPIKE.title": "Spike"
+  "MULTIMADNESS-SPIKE.title": "Spike",
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.description": "Another player transforms a card into a minion sacrifice, redirect all incoming attacks that would be dealt to you to them for 2 turns.",
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Protect Me Squire"
 
 }
