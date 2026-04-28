@@ -9,6 +9,8 @@
   "MULTIMADNESS-COMPUTE.title": "Compute",
   "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {Energy:energyIcons()}",
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!",
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.description": "Another player transforms a card into a minion sacrifice, redirect all incoming attacks that would be dealt to you to them for 2 turns.",
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Protect Me Squire",
   "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
   "MULTIMADNESS-BLIND_FURY.title": "Blind Fury"
 }
