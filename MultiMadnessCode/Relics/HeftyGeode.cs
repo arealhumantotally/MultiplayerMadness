@@ -87,7 +87,7 @@ public class HeftyGeode() : MultiMadnessRelic
         {
             return true;
         }
-        options.Add((RestSiteOption) new Chip(player, this));
+        options.Add((RestSiteOption) new Chip(player));
         return true;
     }
 }

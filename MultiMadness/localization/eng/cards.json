@@ -12,5 +12,7 @@
   "MULTIMADNESS-LUCIDITY.description": "Whenever you take damage on your turn all allies gain {Multiplier:plural:that much|{Multiplier} times that much} block",
   "MULTIMADNESS-LUCIDITY.title": "Lucidity",
   "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
-  "MULTIMADNESS-BLIND_FURY.title": "Blind Fury"
+  "MULTIMADNESS-BLIND_FURY.title": "Blind Fury",
+  "MULTIMADNESS-PASS.description": "Choose a card in your hand Exhaust it and give a copy to another player.",
+  "MULTIMADNESS-PASS.title": "Pass"
 }
