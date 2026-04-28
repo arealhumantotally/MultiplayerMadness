@@ -33,6 +33,6 @@ public class Pass() : MultiMadnessCard(1,
 
     protected override void OnUpgrade()
     {
-
+        this.EnergyCost.UpgradeBy(-1);
     }
 }
