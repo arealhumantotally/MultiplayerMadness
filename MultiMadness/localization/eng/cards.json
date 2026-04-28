@@ -12,5 +12,7 @@
   "MULTIMADNESS-LUCIDITY.description": "Whenever you take damage on your turn all allies gain {Multiplier:plural:that much|{Multiplier} times that much} block",
   "MULTIMADNESS-LUCIDITY.title": "Lucidity",
   "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
-  "MULTIMADNESS-BLIND_FURY.title": "Blind Fury"
+  "MULTIMADNESS-BLIND_FURY.title": "Blind Fury",
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.description": "Another player transforms a card into a minion sacrifice, redirect all incoming attacks that would be dealt to you to them for 2 turns.",
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Protect Me Squire"
 }
