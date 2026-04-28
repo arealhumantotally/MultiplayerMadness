@@ -1,16 +1,16 @@
 {
-  "MULTIMADNESS-MALWARE.description": "Gain [blue]{Block}[/blue] [gold]Block[/gold]\nShuffle a copy of this card into an allies draw pile, it costs [blue]0[/blue]",
+  "MULTIMADNESS-MALWARE.description": "Gain [blue]{Block:diff()}[/blue] [gold]Block[/gold]\nShuffle a copy of this card into an allies draw pile, it costs [blue]0[/blue]",
   "MULTIMADNESS-MALWARE.title": "Malware",
   "MULTIMADNESS-TREACHERY.description": "At the end of your turn, gain {AmountGiven} [gold]Strength[/gold] then deal {AllyDamage} damage to all ALLIES.",
   "MULTIMADNESS-TREACHERY.title": "Treachery",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.description": "Give all allies a [gold]Compute[/gold]",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.title": "Distributed Computing",
-  "MULTIMADNESS-COMPUTE.description": "Give another player X Energy",
+  "MULTIMADNESS-COMPUTE.description": "Give another player {IfUpgraded:show:X+1|X} Energy",
   "MULTIMADNESS-COMPUTE.title": "Compute",
   "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {Energy:energyIcons()}",
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!",
   "MULTIMADNESS-LUCIDITY.description": "Whenever you take damage on your turn all allies gain {Multiplier:plural:that much|{Multiplier} times that much} block",
   "MULTIMADNESS-LUCIDITY.title": "Lucidity",
-  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
+  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
   "MULTIMADNESS-BLIND_FURY.title": "Blind Fury"
 }

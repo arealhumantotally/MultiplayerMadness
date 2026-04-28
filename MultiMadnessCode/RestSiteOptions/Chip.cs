@@ -1,3 +1,5 @@
+using Godot;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.RestSite;
@@ -9,17 +11,23 @@ namespace MultiMadness.MultiMadnessCode.RestSiteOptions;
 
 public class Chip : RestSiteOption
 {
-
-    protected HeftyGeode Relic;
     
-    public Chip(Player owner, HeftyGeode originalRelic) : base(owner)
+    public Chip(Player owner) : base(owner)
     {
-        Relic = originalRelic;
     }
 
     public override async Task<bool> OnSelect()
     {
-        if (await Relic.ChipGeode())
+        bool chipped = false;
+        foreach (Player i in this.Owner.RunState.Players)
+        {
+            foreach (RelicModel j in i.Relics)
+            {
+                if (j is not HeftyGeode geode) continue;
+                chipped |= await geode.ChipGeode();
+            }
+        }
+        if (chipped)
         {
             return true;
         }
@@ -38,5 +46,4 @@ public class Chip : RestSiteOption
         }
     }
     public override string OptionId => "MULTIPLAYERMADNESS-CHIP";
-    
 }
