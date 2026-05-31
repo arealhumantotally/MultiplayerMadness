@@ -26,7 +26,7 @@ public class ProtectMeSquire() : MultiMadnessCard(1,
         CardModel card = (await CardSelectCmd.FromHand(choiceContext,play.Target.Player, new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, 0, 1), (Func<CardModel, bool>) null, (AbstractModel) this)).FirstOrDefault();
         if (card == null) return;
         await CardCmd.TransformTo<MinionSacrifice>(card);
-        await PowerCmd.Apply<CoveredPower>(this.Owner.Creature, 1, play.Target, this);
+        await PowerCmd.Apply<CoveredPower>(choiceContext, this.Owner.Creature, 1, play.Target, this);
     }
 
     protected override void OnUpgrade()
