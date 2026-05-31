@@ -20,7 +20,7 @@ public class Lucidity() : MultiMadnessCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<LucidityPower>(this.Owner.Creature,this.DynamicVars["Multiplier"].IntValue, this.Owner.Creature, this);
+        await PowerCmd.Apply<LucidityPower>(choiceContext,this.Owner.Creature,this.DynamicVars["Multiplier"].IntValue, this.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

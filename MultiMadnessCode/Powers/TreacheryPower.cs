@@ -22,7 +22,7 @@ public class TreacheryPower : MultiMadnessPower
     public override PowerStackType StackType => PowerStackType.Counter;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 0)];
 
-    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         TreacheryPower treacheryPower = this;
         if (side != this.Owner.Side)
@@ -38,7 +38,8 @@ public class TreacheryPower : MultiMadnessPower
             await CreatureCmd.Damage(choiceContext, i, (Decimal) this.DynamicVars["AllyDamage"].IntValue, ValueProp.Unpowered, this.Owner);
         }
 
-        await PowerCmd.Apply<StrengthPower>(this.Owner, (Decimal)this.Amount, this.Owner, (CardModel)null);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, (Decimal)this.Amount, this.Owner, null);
+
 
     }
 

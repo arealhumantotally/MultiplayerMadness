@@ -33,7 +33,7 @@ public class Prismatic : CustomEnchantmentModel
             CardModel cardClone =  play.Card.CreateClone();
             cardClone.Owner = null;
             cardClone.Owner = victim;
-            await CardPileCmd.AddGeneratedCardToCombat(cardClone,PileType.Hand,true);
+            await CardPileCmd.AddGeneratedCardToCombat(cardClone,PileType.Hand,play.Card.Owner);
         }
 
     }

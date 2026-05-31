@@ -33,7 +33,7 @@ public class YouveGotMail() : MultiMadnessCard(2,
         foreach (CardModel card in cards)
         {
             GD.Print("Added a card");
-            await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, true);
+            await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, play.Card.Owner);
         }
         await PlayerCmd.GainEnergy(this.DynamicVars.Energy.IntValue, play.Target.Player);
 

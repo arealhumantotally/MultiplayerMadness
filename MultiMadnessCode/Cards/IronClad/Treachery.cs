@@ -19,7 +19,7 @@ public class Treachery() : MultiMadnessCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        (await PowerCmd.Apply<TreacheryPower>(this.Owner.Creature, this.DynamicVars["AmountGiven"].IntValue, this.Owner.Creature, this))?.IncrementAllyDamage(this.DynamicVars["AllyDamage"].IntValue);
+        (await PowerCmd.Apply<TreacheryPower>(choiceContext, this.Owner.Creature, this.DynamicVars["AmountGiven"].IntValue, this.Owner.Creature, this))?.IncrementAllyDamage(this.DynamicVars["AllyDamage"].IntValue);
     }
 
     protected override void OnUpgrade()
