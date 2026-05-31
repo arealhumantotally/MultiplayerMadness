@@ -10,7 +10,7 @@ using MultiMadness.MultiMadnessCode.Powers;
 namespace MultiMadness.MultiMadnessCode.Cards.IronClad;
 
 [Pool(typeof(IroncladCardPool))]
-public class Lucidity() : MultiMadnessCard(1,
+public class Lucidity() : MultiMadnessCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
