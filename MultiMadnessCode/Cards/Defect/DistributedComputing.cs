@@ -29,7 +29,7 @@ public class DistributedComputing() : MultiMadnessCard(1,
         {
             if (!i.Creature.IsAlive) continue;
             if (i == this.Owner) continue;
-            await CardPileCmd.AddGeneratedCardToCombat((CardModel) this.CombatState.CreateCard<Compute>(i), PileType.Hand, true);
+            await CardPileCmd.AddGeneratedCardToCombat((CardModel) this.CombatState.CreateCard<Compute>(i), PileType.Hand, play.Card.Owner);
         }
         
     }
