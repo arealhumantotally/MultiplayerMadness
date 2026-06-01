@@ -51,7 +51,7 @@ public class CompetitionPower : MultiMadnessPower
         foreach (Creature i in participants)
         {
             if (i.Side != this.Owner.Side) continue;
-            if (i == this.Owner)
+            if (i == this.Owner) continue;
             if (i.Block >= this.Owner.Block)
             {
                 GD.Print(i.Block + " Blockmax increased!");
