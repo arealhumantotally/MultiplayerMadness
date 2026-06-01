@@ -16,5 +16,7 @@
   "MULTIMADNESS-PASS.description": "Choose a card in your hand Exhaust it and give a copy to another player.",
   "MULTIMADNESS-COMPETITION.description": "At the end of each turn \nIf you dealt the least damage,\n gain 1 [gold]Strength[/gold]\n If you had the least block,\n gain 1 [gold]Dexterity[/gold]",
   "MULTIMADNESS-COMPETITION.title": "Catch Up!",
+  "MULTIMADNESS-SPIKE.description": "Give an Ally 3 poison \n Give them strength equal to their poison {IfUpgraded:show:\n Draw a card|}",
+  "MULTIMADNESS-SPIKE.title": "Spike",
   "MULTIMADNESS-PASS.title": "Pass"
 }
