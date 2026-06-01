@@ -27,7 +27,7 @@ public class Pass() : MultiMadnessCard(1,
         CardModel cardClone =  selectedcard.CreateClone();
         cardClone.Owner = null;
         cardClone.Owner = play.Target.Player;
-        await CardPileCmd.AddGeneratedCardToCombat(cardClone,PileType.Hand,true);
+        await CardPileCmd.AddGeneratedCardToCombat(cardClone,PileType.Hand,play.Card.Owner);
         await CardCmd.Exhaust(choiceContext, selectedcard);
     }
 
