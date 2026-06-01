@@ -14,5 +14,7 @@
   "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
   "MULTIMADNESS-BLIND_FURY.title": "Blind Fury",
   "MULTIMADNESS-PASS.description": "Choose a card in your hand Exhaust it and give a copy to another player.",
+  "MULTIMADNESS-COMPETITION.description": "At the end of each turn \nif you dealt the least damage, gain 1 [gold]Strength[/gold]\n if you had the least block, gain 1 [gold]Dexterity[/gold]",
+  "MULTIMADNESS-COMPETITION.title": "Competition",
   "MULTIMADNESS-PASS.title": "Pass"
 }
