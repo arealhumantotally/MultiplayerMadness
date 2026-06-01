@@ -5,7 +5,7 @@
   "MULTIMADNESS-LUCIDITY_POWER.description": "Whenever you take damage on your turn, give all allies that much block",
   "MULTIMADNESS-LUCIDITY_POWER.smartDescription": "Whenever you take damage on your turn, give all allies {Amount:plural:that much|{Multiplier} times that much} block",
   "MULTIMADNESS-LUCIDITY_POWER.title": "LucidityPower",
-  "MULTIMADNESS-COMPETITION_POWER.description": "t",
-  "MULTIMADNESS-COMPETITION_POWER.smartDescription": "t",
-  "MULTIMADNESS-COMPETITION_POWER.title": "CompetitionPower"
+  "MULTIMADNESS-COMPETITION_POWER.description": "At the end of your turn, if you had the least block gain 1 [gold]Dexterity[/gold], if you dealt the least damage gain 1 [gold]Strength[/gold]",
+  "MULTIMADNESS-COMPETITION_POWER.smartDescription": "At the end of your turn, if you had the least block gain 1 [gold]Dexterity[/gold], if you dealt the least damage gain 1 [gold]Strength[/gold]",
+  "MULTIMADNESS-COMPETITION_POWER.title": "Catch Up!"
 }
