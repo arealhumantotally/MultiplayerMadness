@@ -10,7 +10,7 @@ using MultiMadness.MultiMadnessCode.Powers;
 namespace MultiMadness.MultiMadnessCode.Cards.Silent;
 
 [Pool(typeof(SilentCardPool))]
-public class Competition() : MultiMadnessCard(1,
+public class Competition() : MultiMadnessCard(2,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
@@ -25,6 +25,6 @@ public class Competition() : MultiMadnessCard(1,
 
     protected override void OnUpgrade()
     {
-
+        this.EnergyCost.UpgradeBy(-1);
     }
 }

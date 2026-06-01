@@ -23,8 +23,7 @@ public class CompetitionPower : MultiMadnessPower
     public override PowerType Type => PowerType.Buff;
 
     public override PowerStackType StackType => PowerStackType.Counter;
-    public Dictionary<Creature, int> Damages = new Dictionary<Creature, int>();
-    public bool BlockWin = true;
+    private Dictionary<Creature, int> Damages = new Dictionary<Creature, int>();
 
     public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props,
         Creature target, CardModel? cardSource)
@@ -48,6 +47,7 @@ public class CompetitionPower : MultiMadnessPower
         {
             return;
         }
+        bool blockWin = false;
         foreach (Creature i in participants)
         {
             if (i.Side != this.Owner.Side) continue;
@@ -55,29 +55,29 @@ public class CompetitionPower : MultiMadnessPower
             if (i.Block >= this.Owner.Block)
             {
                 GD.Print(i.Block + " Blockmax increased!");
-                BlockWin = false;
+                blockWin = true;
             }
         }
         int myDamage = Damages.ContainsKey(this.Owner) ? Damages[this.Owner] : 0;
-        bool DamageWin = true;
+        bool damageWin = true;
         foreach ((Creature i, int j) in Damages)
         {
             if (myDamage >= j)
             {
-                DamageWin = false;
+                damageWin = false;
             }
         }
 
-        if (DamageWin)
+        if (damageWin)
         {
             await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, this.Amount, this.Owner, null);
         }
-        if (BlockWin)
+        if (blockWin)
         {
             await PowerCmd.Apply<DexterityPower>(choiceContext, this.Owner, this.Amount, this.Owner, null);
         }
 
-        BlockWin = false;
+        blockWin = false;
         Damages =  new Dictionary<Creature, int>();
     }
 }
