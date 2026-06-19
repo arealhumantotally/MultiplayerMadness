@@ -75,6 +75,7 @@ public class HeftyGeode() : MultiMadnessRelic
             RequireManualConfirmation = true
         };
         Prismatic canonicalEnchantment = ModelDb.Enchantment<Prismatic>();
+        
         foreach (CardModel card in await CardSelectCmd.FromDeckForEnchantment(heftyGeode.Owner, (EnchantmentModel) canonicalEnchantment, 1, prefs))
         {
             CardCmd.Enchant(canonicalEnchantment.ToMutable(), card, 1);

@@ -31,7 +31,6 @@ public class Chip : RestSiteOption
         {
             return true;
         }
-        this.IsEnabled = false;
         return false;
     }
     

@@ -20,6 +20,10 @@ public class Prismatic : CustomEnchantmentModel
 
     public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay play)
     {
+        if (play.Card != this.Card)
+        {
+            return;
+        }
         GD.Print(IconPath);
         IReadOnlyList<Player> players = play.Card.Owner.RunState.Players;
         if (this.Status != EnchantmentStatus.Normal)
