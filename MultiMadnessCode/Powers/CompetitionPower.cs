@@ -28,6 +28,14 @@ public class CompetitionPower : MultiMadnessPower
     public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props,
         Creature target, CardModel? cardSource)
     {
+        if (dealer == null)
+        {
+            return;
+        }
+        if (target.Side == this.Owner.Side)
+        {
+            return;
+        }
         if (dealer.Side != this.Owner.Side)
         {
             return;
