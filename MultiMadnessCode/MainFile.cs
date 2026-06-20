@@ -28,7 +28,7 @@ public partial class MainFile : Node
     }
 }
 
-[HarmonyPatch(typeof(Vakuu), "Pool2", MethodType.Getter)]
+[HarmonyPatch(typeof(Vakuu), "Pool3", MethodType.Getter)]
 class VakuuLootPatch
 {
     static IEnumerable<EventOption> Postfix(IEnumerable<EventOption> __result, Vakuu __instance)
