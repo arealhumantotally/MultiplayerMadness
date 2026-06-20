@@ -10,14 +10,14 @@
   "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {Energy:energyIcons()}",
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!",
   "MULTIMADNESS-LUCIDITY.description": "Whenever you take damage on your turn all allies gain {Multiplier:plural:that much|{Multiplier} times that much} block",
-  "MULTIMADNESS-LUCIDITY.title": "Lucidity",
-  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\n Deal {AllyDamage} to all allies. ",
+  "MULTIMADNESS-LUCIDITY.title": "Lucid",
+  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\nDeal {AllyDamage} to all allies. ",
   "MULTIMADNESS-BLIND_FURY.title": "Blind Fury",
   "MULTIMADNESS-PASS.title": "Pass",
   "MULTIMADNESS-PASS.description": "Choose a card in your hand Exhaust it and give a copy to another player.",
-  "MULTIMADNESS-COMPETITION.description": "At the end of each turn \nIf you dealt the least damage,\n gain 1 [gold]Strength[/gold]\n If you had the least block,\n gain 1 [gold]Dexterity[/gold]",
+  "MULTIMADNESS-COMPETITION.description": "At the end of each turn \nIf you dealt the least damage,\n gain 1 [gold]Strength[/gold]\nIf you had the least block,\ngain 1 [gold]Dexterity[/gold]",
   "MULTIMADNESS-COMPETITION.title": "Catch Up!",
-  "MULTIMADNESS-SPIKE.description": "Give an Ally 3 poison \n Give them strength equal to their poison {IfUpgraded:show:\n Draw a card|}",
+  "MULTIMADNESS-SPIKE.description": "Give an Ally 3 poison \nGive them strength equal to their poison {IfUpgraded:show:\nDraw a card|}",
   "MULTIMADNESS-SPIKE.title": "Spike"
 
 }
