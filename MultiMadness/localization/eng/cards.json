@@ -21,7 +21,9 @@
   "MULTIMADNESS-SPIKE.title": "Spike",
   "MULTIMADNESS-NEVER_AGAIN.description": "Give all allies 1 Intangible\nGain {vulnamount:diff()} Vulnerable",
   "MULTIMADNESS-NEVER_AGAIN.title": "Never Again",
-  "MULTIMADNESS-PACT_OF_NEGATION.description": "The next time an ally plays a {IfUpgraded:show:skill or power|card}, negate it and play two copies of it.",
-  "MULTIMADNESS-PACT_OF_NEGATION.title": "Pact Of Negation"
+  "MULTIMADNESS-PACT_OF_NEGATION.description": "The next time an ally plays a {IfUpgraded:show:card|skill or power}, negate it and play two copies of it.",
+  "MULTIMADNESS-PACT_OF_NEGATION.title": "Pact Of Negation",
+  "MULTIMADNESS-TRANSFER_POWER.description": "Give another player {IfUpgraded:show:X*2|X} energy ",
+  "MULTIMADNESS-TRANSFER_POWER.title": "Transfer Power"
 
 }
