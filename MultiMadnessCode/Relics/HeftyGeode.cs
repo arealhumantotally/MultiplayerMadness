@@ -20,7 +20,7 @@ using MultiMadness.MultiMadnessCode.RestSiteOptions;
 
 namespace MultiMadness.MultiMadnessCode.Relics;
 
-[Pool(typeof(EventRelicPool))]
+[Pool(typeof(SharedRelicPool))]
 public class HeftyGeode() : MultiMadnessRelic
 {
     public override RelicRarity Rarity =>
