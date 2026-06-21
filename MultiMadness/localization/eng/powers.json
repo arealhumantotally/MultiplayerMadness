@@ -8,7 +8,7 @@
   "MULTIMADNESS-COMPETITION_POWER.description": "At the end of your turn, if you had the least block gain 1 [gold]Dexterity[/gold], if you dealt the least damage gain 1 [gold]Strength[/gold]",
   "MULTIMADNESS-COMPETITION_POWER.smartDescription": "At the end of your turn, if you had the least block gain 1 [gold]Dexterity[/gold], if you dealt the least damage gain 1 [gold]Strength[/gold]",
   "MULTIMADNESS-COMPETITION_POWER.title": "Catch Up!",
-  "MULTIMADNESS-PACT_OF_NEGATION_POWER.description": "",
-  "MULTIMADNESS-PACT_OF_NEGATION_POWER.smartDescription": "The next time an ally plays a ",
-  "MULTIMADNESS-PACT_OF_NEGATION_POWER.title": "PactOfNegation"
+  "MULTIMADNESS-PACT_OF_NEGATION_POWER.description": "The next time an ally plays a card, negate it and play it twice yourself",
+  "MULTIMADNESS-PACT_OF_NEGATION_POWER.smartDescription": "The next time an ally plays a card, negate it and play it twice yourself",
+  "MULTIMADNESS-PACT_OF_NEGATION_POWER.title": "Pact Of Negation"
 }
