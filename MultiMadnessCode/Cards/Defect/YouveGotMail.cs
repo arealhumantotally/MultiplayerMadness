@@ -16,6 +16,7 @@ public class YouveGotMail() : MultiMadnessCard(2,
     TargetType.AnyAlly)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1), new EnergyVar("Energy",1)];
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

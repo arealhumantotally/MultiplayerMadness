@@ -18,6 +18,7 @@ public class NeverAgain() : MultiMadnessCard(3,
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("vulnamount",5)];
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

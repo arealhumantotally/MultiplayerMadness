@@ -16,7 +16,7 @@ public class Spike() : MultiMadnessCard(0,
     TargetType.AnyAlly)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
-
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

@@ -15,6 +15,7 @@ public class Competition() : MultiMadnessCard(2,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

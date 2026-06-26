@@ -16,6 +16,7 @@ public class TransferPower() : MultiMadnessCard(0,
 {
     protected override bool HasEnergyCostX => true;
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    
 
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
 
