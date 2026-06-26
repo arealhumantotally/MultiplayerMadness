@@ -19,6 +19,7 @@ public class ProtectMeSquire() : MultiMadnessCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     public override bool HasStarCostX => true;
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

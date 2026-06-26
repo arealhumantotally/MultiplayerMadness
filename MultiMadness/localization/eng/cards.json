@@ -28,6 +28,8 @@
   "MULTIMADNESS-SPIKE.description": "Give an Ally 3 poison \nGive them strength equal to their poison {IfUpgraded:show:\nDraw a card|}",
   "MULTIMADNESS-SPIKE.title": "Spike",
   "MULTIMADNESS-PROTECT_ME_SQUIRE.description": "Give an ally X plating.",
-  "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Knight"
+  "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Knight",
+  "MULTIMADNESS-TAXATION.description": "For every 2 energy gained by allies during their turns, gain 1 energy {IfUpgraded:show:\nFor every 2 cards drawn by allies during their turns, draw a card.|}",
+  "MULTIMADNESS-TAXATION.title": "Taxation"
 
 }
