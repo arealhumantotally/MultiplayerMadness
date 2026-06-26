@@ -1,5 +1,5 @@
 {
-  "MULTIMADNESS-MALWARE.description": "Gain [blue]{[gold]Block[/gold]}[/blue] [gold][gold]Block[/gold][/gold]\nShuffle a copy of this card into an allies draw pile, it costs [blue]0[/blue]",
+  "MULTIMADNESS-MALWARE.description": "Gain {Block} [gold][gold]Block[/gold][/gold]\nShuffle a copy of this card into an allies draw pile, it costs [blue]0[/blue]",
   "MULTIMADNESS-MALWARE.title": "Malware",
   "MULTIMADNESS-TREACHERY.description": "At the end of your turn, gain {AmountGiven} [gold]Strength[/gold] then deal {AllyDamage} damage to all ALLIES.",
   "MULTIMADNESS-TREACHERY.title": "Treachery",
