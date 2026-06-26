@@ -1,9 +1,9 @@
 {
   "id": "MultiMadness",
-  "name": "MultiMadness",
-  "author": "Me",
-  "description": "Nomis you know what the mod is why are you reading this.",
-  "version": "v0.0.0",
+  "name": "Multi Madness",
+  "author": "Webby",
+  "description": "A mod dedicated to adding more multiplayer exclusive cards and features, for a more exhaustive description, check the workshop page!",
+  "version": "v1.0.0",
   "has_pck": true,
   "has_dll": true,
   "min_game_version": "0.106.1",
