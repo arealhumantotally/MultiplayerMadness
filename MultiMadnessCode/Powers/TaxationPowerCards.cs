@@ -18,35 +18,35 @@ namespace MultiMadness.MultiMadnessCode.Powers;
 
 
 
-public class TaxationPower : MultiMadnessPower
+
+public class TaxationPowerCard : MultiMadnessPower
 {
     public const int ratio = 2;
     public override PowerType Type => PowerType.Buff;
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
-    public int energyGained = 0;
+    public int cardsDrawn = 0;
     
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public override int DisplayAmount => energyGained % 2;
-
-    public override decimal ModifyEnergyGain(Player player, decimal amount)
+    public override int DisplayAmount => cardsDrawn % 2;
+    //Causes sate divergences for reasons unknown.
+    public async override Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
     {
-        if (player == this.Owner.Player)
+        if (card.Owner == this.Owner.Player)
         {
-            return amount;
+            return;
         }
-        energyGained += (int)amount;
-        int energyModulus = energyGained % ratio;
-        int i = energyGained - energyModulus;
-        GD.Print(energyGained);
-        PlayerCmd.GainEnergy(i / ratio,this.Owner.Player);
-        energyGained = energyModulus;
-        GD.Print(energyGained);
+        cardsDrawn += 1;
+        int cardModulus = cardsDrawn % ratio;
+        int i = cardsDrawn - cardModulus;
+        GD.Print(cardsDrawn);
+        await CardPileCmd.Draw(choiceContext,i / ratio, this.Owner.Player);
+        cardsDrawn = cardModulus;
+        GD.Print(cardsDrawn);
         this.InvokeDisplayAmountChanged();
         
-        return amount;
-
     }
+    
 
     
     

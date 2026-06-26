@@ -18,15 +18,14 @@ public class ProtectMeSquire() : MultiMadnessCard(1,
     TargetType.AnyAlly)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    public override bool HasStarCostX => true;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        CardModel card = (await CardSelectCmd.FromHand(choiceContext,play.Target.Player, new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, 0, 1), (Func<CardModel, bool>) null, (AbstractModel) this)).FirstOrDefault();
-        if (card == null) return;
-        await CardCmd.TransformTo<MinionSacrifice>(card);
-        await PowerCmd.Apply<CoveredPower>(choiceContext, this.Owner.Creature, 1, play.Target, this);
+        int plating = this.ResolveStarXValue();
+        await PowerCmd.Apply<PlatingPower>(choiceContext, play.Target, plating, this.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
