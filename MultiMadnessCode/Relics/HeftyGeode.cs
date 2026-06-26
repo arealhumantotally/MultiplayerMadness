@@ -23,6 +23,7 @@ namespace MultiMadness.MultiMadnessCode.Relics;
 [Pool(typeof(SharedRelicPool))]
 public class HeftyGeode() : MultiMadnessRelic
 {
+    public override bool IsAllowed(IRunState runState) => runState.Players.Count > 1;
     public override RelicRarity Rarity =>
         RelicRarity.Rare;
     public override int DisplayAmount => this.ChipsRemaining;
