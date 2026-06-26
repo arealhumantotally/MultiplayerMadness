@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtxnci60n7ssn"
-path="res://.godot/imported/never_again.png-110a2797caab272de3bcea10d8bff16c.ctex"
+uid="uid://dy7yjtkae246c"
+path="res://.godot/imported/taxation_power_card.png-66057da785f759192c8e79c0c11452e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MultiMadness/images/card_portraits/big/never_again.png"
-dest_files=["res://.godot/imported/never_again.png-110a2797caab272de3bcea10d8bff16c.ctex"]
+source_file="res://MultiMadness/images/powers/taxation_power_card.png"
+dest_files=["res://.godot/imported/taxation_power_card.png-66057da785f759192c8e79c0c11452e3.ctex"]
 
 [params]
 

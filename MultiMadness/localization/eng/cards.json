@@ -25,8 +25,6 @@
   "MULTIMADNESS-PACT_OF_NEGATION.title": "Pact Of Negation",
   "MULTIMADNESS-TRANSFER_POWER.description": "Give another player {IfUpgraded:show:X*2|X} energy ",
   "MULTIMADNESS-TRANSFER_POWER.title": "Transfer Power",
-  "MULTIMADNESS-SPIKE.description": "Give an Ally 3 poison \nGive them strength equal to their poison {IfUpgraded:show:\nDraw a card|}",
-  "MULTIMADNESS-SPIKE.title": "Spike",
   "MULTIMADNESS-PROTECT_ME_SQUIRE.description": "Give an ally X plating.",
   "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Knight",
   "MULTIMADNESS-TAXATION.description": "For every 2 energy gained by allies during their turns, gain 1 energy {IfUpgraded:show:\nFor every 2 cards drawn by allies during their turns, draw a card.|}",
