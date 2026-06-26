@@ -23,7 +23,7 @@ public class Taxation() : MultiMadnessCard(1,
     {
         if (this.IsUpgraded)
         {
-            (await PowerCmd.Apply<TaxationPowerCard>(choiceContext, this.Owner.Creature,1,this.Owner.Creature,this)).DynamicVars["Upgrade"].BaseValue = 1;
+            await PowerCmd.Apply<TaxationPowerCard>(choiceContext, this.Owner.Creature,1,this.Owner.Creature,this);
         }
         await PowerCmd.Apply<TaxationPower>(choiceContext, this.Owner.Creature,1,this.Owner.Creature,this);
         

@@ -30,6 +30,8 @@
   "MULTIMADNESS-PROTECT_ME_SQUIRE.description": "Give an ally X plating.",
   "MULTIMADNESS-PROTECT_ME_SQUIRE.title": "Knight",
   "MULTIMADNESS-TAXATION.description": "For every 2 energy gained by allies during their turns, gain 1 energy {IfUpgraded:show:\nFor every 2 cards drawn by allies during their turns, draw a card.|}",
-  "MULTIMADNESS-TAXATION.title": "Taxation"
+  "MULTIMADNESS-TAXATION.title": "Taxation",
+  "MULTIMADNESS-HEROIC_SACRIFICE.description": "Deal {Damage:diff()} to all enemies.\nDie.\n(Heroically)",
+  "MULTIMADNESS-HEROIC_SACRIFICE.title": "Heroic Sacrifice"
 
 }
