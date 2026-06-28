@@ -1,7 +1,7 @@
 {
   "MULTIMADNESS-MALWARE.description": "Gain {Block:diff()} [gold]Block[/gold]\nShuffle a copy of this card into another player's draw pile, it costs [blue]0[/blue]",
   "MULTIMADNESS-MALWARE.title": "Malware",
-  "MULTIMADNESS-TREACHERY.description": "At the end of your turn, gain {AmountGiven} [gold]Strength[/gold] then deal {AllyDamage} damage to all ALLIES.",
+  "MULTIMADNESS-TREACHERY.description": "At the end of your turn, gain {AmountGiven:diff()} [gold]Strength[/gold] then deal {AllyDamage} damage to all ALLIES.",
   "MULTIMADNESS-TREACHERY.title": "Treachery",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.description": "Give all allies a [gold]Compute[/gold]",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.title": "Distributed Computing",
