@@ -18,7 +18,7 @@ public class BlindFury() : MultiMadnessCard(0,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 4), new DamageVar(13, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("AllyDamage", 2), new DamageVar(13, ValueProp.Move)];
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -38,5 +38,6 @@ public class BlindFury() : MultiMadnessCard(0,
     protected override void OnUpgrade()
     {
         this.DynamicVars.Damage.UpgradeValueBy(5);
+        this.DynamicVars["AllyDamage"].UpgradeValueBy(-1);
     }
 }

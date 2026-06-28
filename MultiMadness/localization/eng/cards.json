@@ -11,7 +11,7 @@
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!",
   "MULTIMADNESS-LUCIDITY.description": "Whenever you take damage on your turn all allies gain {Multiplier:plural:that much|{Multiplier} times that much} [gold]Block[/gold]",
   "MULTIMADNESS-LUCIDITY.title": "Lucid",
-  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\nDeal {AllyDamage} to all allies. ",
+  "MULTIMADNESS-BLIND_FURY.description": "Deal {Damage:diff()} damage to all enemies.\nDeal {AllyDamage:diff()} to all allies. ",
   "MULTIMADNESS-BLIND_FURY.title": "Blind Fury",
   "MULTIMADNESS-PASS.title": "Pass",
   "MULTIMADNESS-PASS.description": "Choose a card in your hand [gold]Exhaust[/gold] it and give a copy to another player.",
