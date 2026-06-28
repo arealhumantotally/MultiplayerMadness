@@ -7,7 +7,7 @@
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.title": "Distributed Computing",
   "MULTIMADNESS-COMPUTE.description": "Give another player X [gold]Energy[/gold]",
   "MULTIMADNESS-COMPUTE.title": "Compute",
-  "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {[gold]Energy[/gold]:[gold]Energy[/gold]Icons()}",
+  "MULTIMADNESS-YOUVE_GOT_MAIL.description": "Give another player {Cards:diff()} common [blue]Defect[/blue] {Cards:plural:card|cards}, and {Energy:EnergyIcons()}",
   "MULTIMADNESS-YOUVE_GOT_MAIL.title": "You've Got Mail!",
   "MULTIMADNESS-LUCIDITY.description": "Whenever you take damage on your turn all allies gain {Multiplier:plural:that much|{Multiplier} times that much} [gold]Block[/gold]",
   "MULTIMADNESS-LUCIDITY.title": "Lucid",
