@@ -9,7 +9,7 @@ using MultiMadness.MultiMadnessCode.Powers;
 namespace MultiMadness.MultiMadnessCode.Cards.IronClad;
 
 [Pool(typeof(IroncladCardPool))]
-public class Treachery() : MultiMadnessCard(2,
+public class Treachery() : MultiMadnessCard(1,
     CardType.Power, CardRarity.Uncommon,
     MegaCrit.Sts2.Core.Entities.Cards.TargetType.Self)
 {
