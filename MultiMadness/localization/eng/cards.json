@@ -17,7 +17,7 @@
   "MULTIMADNESS-PASS.description": "Choose a card in your hand [gold]Exhaust[/gold] it and give a copy to another player.",
   "MULTIMADNESS-COMPETITION.description": "At the end of each turn \nIf you dealt the least damage,\ngain 1 [gold]Strength[/gold]\nIf you had the least [gold]Block[/gold],\ngain 1 [gold]Dexterity[/gold]",
   "MULTIMADNESS-COMPETITION.title": "Catch Up!",
-  "MULTIMADNESS-SPIKE.description": "Give another player 3 poison \nGive them [gold]Strength[/gold] equal to their poison {IfUpgraded:show:\nDraw a card|}",
+  "MULTIMADNESS-SPIKE.description": "Give another player 3 [gold]Poison[/gold] \nGive them [gold]Strength[/gold] equal to their [gold]Poison[/gold] {IfUpgraded:show:\nDraw a card|}",
   "MULTIMADNESS-SPIKE.title": "Spike",
   "MULTIMADNESS-NEVER_AGAIN.description": "Give all allies 1 [gold]Intangible[/gold]\nGain {vulnamount:diff()} Vulnerable",
   "MULTIMADNESS-NEVER_AGAIN.title": "Never Again",
