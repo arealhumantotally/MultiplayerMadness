@@ -16,7 +16,7 @@ public class NeverAgain() : MultiMadnessCard(3,
     CardType.Skill, CardRarity.Rare,
     TargetType.AllAllies)
 {
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("vulnamount",5)];
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
 
