@@ -13,7 +13,7 @@ using MultiMadness.MultiMadnessCode.Cards;
 namespace MultiMadness.MultiMadnessCode.Cards.Regent;
 
 [Pool(typeof(RegentCardPool))]
-public class ProtectMeSquire() : MultiMadnessCard(1,
+public class ProtectMeSquire() : MultiMadnessCard(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AnyAlly)
 {
@@ -31,6 +31,6 @@ public class ProtectMeSquire() : MultiMadnessCard(1,
 
     protected override void OnUpgrade()
     {
-
+        this.EnergyCost.UpgradeBy(-1);
     }
 }
