@@ -13,7 +13,7 @@ using MultiMadness.MultiMadnessCode.Cards;
 namespace MultiMadness.MultiMadnessCode.Cards.Defect;
 
 [Pool(typeof(DefectCardPool))]
-public class DistributedComputing() : MultiMadnessCard(1,
+public class DistributedComputing() : MultiMadnessCard(2,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
@@ -28,7 +28,6 @@ public class DistributedComputing() : MultiMadnessCard(1,
         foreach (Player i in this.CombatState.Players)
         {
             if (!i.Creature.IsAlive) continue;
-            if (i == this.Owner) continue;
             await CardPileCmd.AddGeneratedCardToCombat((CardModel) this.CombatState.CreateCard<Compute>(i), PileType.Hand, play.Card.Owner);
         }
         

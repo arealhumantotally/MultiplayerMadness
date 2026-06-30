@@ -3,7 +3,7 @@
   "MULTIMADNESS-MALWARE.title": "Malware",
   "MULTIMADNESS-TREACHERY.description": "At the end of your turn, gain {AmountGiven:diff()} [gold]Strength[/gold] then deal {AllyDamage} damage to all ALLIES.",
   "MULTIMADNESS-TREACHERY.title": "Treachery",
-  "MULTIMADNESS-DISTRIBUTED_COMPUTING.description": "Give all allies a [gold]Compute[/gold]",
+  "MULTIMADNESS-DISTRIBUTED_COMPUTING.description": "Give EVERYONE a [gold]Compute[/gold]",
   "MULTIMADNESS-DISTRIBUTED_COMPUTING.title": "Distributed Computing",
   "MULTIMADNESS-COMPUTE.description": "Give another player X{energyPrefix:energyIcons(1)}",
   "MULTIMADNESS-COMPUTE.title": "Compute",
