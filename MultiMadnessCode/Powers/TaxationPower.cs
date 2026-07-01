@@ -1,3 +1,4 @@
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Combat;
@@ -32,6 +33,11 @@ public class TaxationPower : MultiMadnessPower
     public override decimal ModifyEnergyGain(Player player, decimal amount)
     {
         if (player == this.Owner.Player)
+        {
+            return amount;
+        }
+
+        if (player.HasPower<TaxationPower>())
         {
             return amount;
         }
